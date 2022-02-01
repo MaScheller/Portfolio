@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Matthias' Portfolio</title>
+
+    <!--Google Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a0eab958d1.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="/style.css">
+
+
+
+  </head>
+  <body>
+    <header>
+    <!--  <div class="logo"> <img src="LOGOHALTER" alt=""> </div> -->
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link"> Home </a></li>
+          <li class="nav__item"><a href="#about" class="nav__link"> Über mich </a></li>
+          <li class="nav__item"><a href="#services" class="nav__link"> Meine Skills </a></li>
+          <li class="nav__item"><a href="#work" class="nav__link"> Projekte </a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+       <h1 class="section__title section__title--intro">
+         Hey, ich bin <strong>Matthias</strong>
+       </h1>
+       <p class="section__subtitle section__subtitle--intro">Azubi auf Suche!</p>
+       <img src="/img/MatzeAvatar.jpg" alt="Matthias' Avatar" class="intro__img">
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about"> Wer bin ich? </h2>
+      <p class="section__subtitle section__subtitle--about">Angehender Programmierer.<br>Fachabitur inkl. Ausbildung zum ITA</p>
+
+      <div class="about-me__body">
+        <p>Im Jahre 2020 habe ich die Schulische Ausbildung zum Informationstechnischen Assistenten
+           inklusive Fachhochschulreife am Berufskolleg am Haspel in Wuppertal abgeschlossen.</p>
+        <p>In dem Jahr ist viel passiert, die Corona Pandemie ist an dem Bewerbungsprozess für eine Ausbildung
+          nicht spurlos vorbeigezogen und viele Vorstellungstermine wurden abgesagt oder aufs weniger persönliche Telefonat verlegt.</p>
+        <p>Trotz alldem konnte ich bereits im August 2020 eine Ausbildung zum Fachinformatiker für Systemintegration bei der "Nachrichtentechnik Klein" in Wuppertal beginnen.
+        Meine Tätigkeiten im Betrieb waren vielseitig und durch Aufträge beim Kunden vor Ort wurde es nur selten langweilig.</p>
+        <p>Jedoch merkte ich das mein Arbeitsalltag eher dem eines Elektrikers ähnelt als dem eines Informatikers - und das wollte ich eigentlich nie sein.
+        Ich wollte am Computer arbeiten und Webseiten mit Leben und Funktionen füllen.
+        Deswegen habe ich mich dazu entschieden doch den Traum vom Programmierer zu verfolgen und mir eine Ausbildung zum Anwendungsentwickler zu suchen!
+       </p>
+      </div>
+      <img src="/img/AboutMePic.png" alt="Matthias' Avatar" class="about-me__img">
+      <a href="LebenslaufMatthiasScheller.pdf" class="btn btnLebenslauf"> Mein Lebenslauf </a>
+    </section>
+
+    <!-- My Services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">Mein Skillset</h2>
+        <div class="services">
+
+          <div class="service">
+            <h3> Webentwicklung </h3>
+            <p> Ich konnte bereits Erfahrung in der Webentwicklung sammeln, unter anderem bei Praktika in denen ich mit php, JavaScript und HTML
+            eine Webseite und simple Spiele wie z.B. Snake aufgebaut habe. An meinem Berufskolleg wurde das objektorientierte Programmieren mit C# vermittelt.</p>
+          </div> <!-- / Service -->
+
+          <div class="service">
+            <h3> Datenbanken und MySQL </h3>
+            <p> Ich habe bereits eine phpMyAdmin Datenbank an einer Webseite angebunden, welche die erreichten Scores der Nutzer in eine Datenbank einträgt und zu jeder Zeit die Top 5 besten Spieler angezeigt werden.
+            Darüber hinaus habe ich im Schulunterricht gelernt wie man Datensätze ordnet, anlegt und mit MySQL Befehlen bestimmte Datensätze ausgibt </p>
+          </div> <!-- / Service -->
+
+          <div class="service">
+            <h3> Crypto und Blockchain </h3>
+            <p> Auch mit neueren Technologien wie Cryptowährungen und der Programmierung von Smart Contracts auf der Blockchain bin ich bereits vertraut.
+            Auch mit neueren Technologien wie Cryptowährungen und der Programmierung von Smart Contracts auf der Blockchain bin ich bereits vertraut.</p>
+          </div> <!-- / Service -->
+        </div>
+
+      </section>
+
+
+      <!-- My work -->
+      <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My work</h2>
+        <p class="section__subtitle section__subtitle--work">Einige Beispiel Projekte</p>
+        <div class="portfolio">
+
+          <!-- portfolio Item 1-->
+          <a href="2048.html" class="portfolio__item">
+            <img src="/img/2048cover.png" alt="2048" class="portfolio__img">
+          </a>
+
+          <!-- portfolio Item 2-->
+          <a href="candycrush.html" class="portfolio__item">
+            <img src="/img/candycrushcover.png" alt="Candy Crush" class="portfolio__img">
+          </a>
+
+          <!-- portfolio Item 3-->
+          <a href="flappybird.html" class="portfolio__item">
+            <img src="/img/flappycover.png" alt="Flappybird" class="portfolio__img">
+          </a>
+
+          <!-- portfolio Item 4-->
+          <a href="Snake.html" class="portfolio__item">
+            <img src="/img/snakecover.png" alt="Snake" class="portfolio__img">
+          </a>
+
+          <!-- portfolio Item 5-->
+          <a href="dinorun.html" class="portfolio__item">
+            <img src="/img/dinocover.png" alt="Matthias' Avatar" class="portfolio__img">
+          </a>
+
+          <!-- portfolio Item 6 -->
+          <a href="doodlejump.html" class="portfolio__item">
+            <img src="/img/doodlejumpcover.png" alt="Doodlejump" class="portfolio__img">
+          </a>
+
+
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <a class="footer__text">Kontaktieren Sie mich!</a> <br>
+        <a href="mailto:matthias.scheller@outlook.de" class="footer__link"> Matthias.Scheller@outlook.de </a>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/MaScheller" target="_blank">
+              <i class="fab fa-github-square"></i>
+            </a>
+          </li>
+
+          <li class="social-list__item">
+            <a class="social-list__link" href="mailto:Matthias.scheller@outlook.de">
+            <i class="fas fa-envelope-square"></i>
+          </a>
+          </li>
+        <!--  <li class="social-list__item"> <a class="social-list__link" href="https://localhost">C</a> </li> -->
+        </ul>
+      </footer>
+      <script src="/Index.js"></script>
+
+  </body>
+</html>
